@@ -9,15 +9,15 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'JPHAngularCli';
 
-  constructor(private router:Router){}
+  constructor(private router: Router) { }
 
   //método chamado na barra de navegação
-  ListarAlbuns(){
+  ListarAlbuns() {
     //navigate deve chamar o que foi mapeado no arquivo app-routing.module.ts
     this.router.navigate(["getAlbums"]);
   }
 
-  ListarComments(){
+  ListarComments() {
     this.router.navigate(["getComments"]);
   }
 }

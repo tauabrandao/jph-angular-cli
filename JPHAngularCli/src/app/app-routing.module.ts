@@ -7,8 +7,8 @@ import { ListarCommentsComponent } from './Comment/listar-comments/listar-commen
 //declaração das rotas.
 //todas as rotas devem ser declaradas aqui.
 const routes: Routes = [
-  {path:'getAlbums', component:ListarAlbumsComponent},
-  {path:'getComments', component:ListarCommentsComponent},
+  { path: 'getAlbums', component: ListarAlbumsComponent },
+  { path: 'getComments', component: ListarCommentsComponent },
 ];
 
 @NgModule({
