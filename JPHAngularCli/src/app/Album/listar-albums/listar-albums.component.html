@@ -15,10 +15,11 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>321</td>
-                    <td>This is a title</td>
+                  <!-- albuns vem de listar-albums-component.ts -->
+                  <tr *ngFor="let a of albums">
+                    <td>{{a.userId}}</td>
+                    <td>{{a.id}}</td>
+                    <td>{{a.title}}</td>
                   </tr>
                 </tbody>
               </table>
