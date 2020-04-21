@@ -16,4 +16,8 @@ export class AppComponent {
     //navigate deve chamar o que foi mapeado no arquivo app-routing.module.ts
     this.router.navigate(["getAlbums"]);
   }
+
+  ListarComments(){
+    this.router.navigate(["getComments"]);
+  }
 }
