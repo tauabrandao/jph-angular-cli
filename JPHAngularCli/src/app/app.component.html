@@ -8,7 +8,7 @@
     <ul class="navbar-nav mr-auto">
       
       <li class="nav-item">
-        <a class="nav-link" href="#">Albuns</a>
+        <a [routerLink]="" (click)="ListarAlbuns()" class="nav-link" href>Albuns</a>
       </li>
       
     </ul>
@@ -16,4 +16,7 @@
   </div>
 </nav>
 
+
+
+<!-- componentes serão roteados dentro dessa tag -->
 <router-outlet></router-outlet>
