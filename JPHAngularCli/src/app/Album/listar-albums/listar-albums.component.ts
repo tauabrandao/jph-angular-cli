@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AlbumService } from 'src/app/album.service';
-import { i18nMetaToDocStmt } from '@angular/compiler/src/render3/view/i18n/meta';
 
 @Component({
   selector: 'app-listar-albums',
