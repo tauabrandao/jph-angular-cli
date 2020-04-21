@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListarAlbumsComponent } from './Album/listar-albums/listar-albums.component';
 import { ListarCommentsComponent } from './Comment/listar-comments/listar-comments.component';
+import {AlbumService} from './album.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { ListarCommentsComponent } from './Comment/listar-comments/listar-commen
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AlbumService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
