@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ListarAlbumsComponent } from './Album/listar-albums/listar-albums.component';
 import { ListarCommentsComponent } from './Comment/listar-comments/listar-comments.component';
 import {AlbumService} from './album.service';
+import {CommentService} from './comment.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import {AlbumService} from './album.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [AlbumService],
+  providers: [AlbumService, CommentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

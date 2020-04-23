@@ -1,1 +1,31 @@
-<p>listar-comments works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Lista de comments</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-hover table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">Post ID</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Body</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let c of comments">
+                    <td>{{c.postId}}</td>
+                    <td>{{c.id}}</td>
+                    <td>{{c.name}}</td>
+                    <td>{{c.email}}</td>
+                    <td>{{c.body}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

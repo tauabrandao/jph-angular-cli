@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommentService } from 'src/app/comment.service';
 
 @Component({
   selector: 'app-listar-comments',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarCommentsComponent implements OnInit {
 
-  constructor() { }
+  comments: Array<any>;
+
+  constructor(private service:CommentService) { }
 
   ngOnInit(): void {
+    this.listar();
+  }
+
+  listar(){
+    this.service.listarComments().subscribe(dados => this.comments = dados);
   }
 
 }
