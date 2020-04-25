@@ -8,14 +8,17 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
 
-      <li class="nav-item">
-        <a [routerLink]="" (click)="ListarAlbuns()" class="nav-link" href>Albuns</a>
-      </li>
-      <li class="nav-item">
-        <a [routerLink]="" (click)="ListarComments()" class="nav-link" href>Comments</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Get
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a [routerLink]="" (click)="ListarAlbuns()" class="dropdown-item" href>Albuns</a>
+          <a [routerLink]="" (click)="ListarComments()" class="dropdown-item" href>Comments</a>
+        </div>
       </li>
     </ul>
-
   </div>
 </nav>
 
